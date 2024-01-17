@@ -48,6 +48,7 @@ export const Header = styled.header`
 `;
 export const Main = styled.main`
   background-color: ${({ theme }) => theme.COLORS.WHITE};
+  overflow-y: scroll;
 
   img {
     width: 100%;

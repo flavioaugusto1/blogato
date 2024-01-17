@@ -46,5 +46,53 @@ export const Header = styled.header`
     border-radius: 50%;
   }
 `;
-export const Main = styled.main``;
+export const Main = styled.main`
+  background-color: ${({ theme }) => theme.COLORS.WHITE};
+
+  img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+  }
+
+  section {
+    h1 {
+      font-size: 2.4rem;
+      line-height: 4rem;
+
+      margin-bottom: 2rem;
+    }
+    .assessment {
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+
+      button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border: none;
+        border-radius: 50%;
+
+        background-color: ${({ theme }) => theme.COLORS.BLUE_700};
+        color: ${({ theme }) => theme.COLORS.WHITE};
+        cursor: pointer;
+
+        .button-icons {
+          height: 4rem;
+          width: 4rem;
+          padding: 1rem;
+        }
+      }
+    }
+    .description {
+      font-size: 1.6rem;
+      line-height: 2.5rem;
+      text-align: justify;
+
+      margin-top: 3rem;
+    }
+  }
+`;
 export const Footer = styled.footer``;

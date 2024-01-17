@@ -71,7 +71,7 @@ export function Home() {
           />
 
           <Article
-            image="https://source.unsplash.com/random/?cats"
+            image="https://source.unsplash.com/random/?many+cat"
             title={"Balaio de gatos"}
             description={
               "Como evitar confusões entre seus gatíneos e acostumá-los desde filhotes."

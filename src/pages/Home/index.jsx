@@ -2,7 +2,8 @@ import { Container, Header, Main, Footer } from "./styles";
 import { AiOutlineLike, AiOutlineDislike } from "react-icons/ai";
 
 import Logo from "../../assets/logo.svg";
-import CatPrincipal from "../../assets/cat-principal.png";
+
+import { Article } from "../../components/Article";
 
 export function Home() {
   return (
@@ -21,7 +22,7 @@ export function Home() {
         />
       </Header>
       <Main>
-        <img src={CatPrincipal} alt="" />
+        <img src="https://source.unsplash.com/random/?astronaut+cat" alt="" />
         <section className="wrap">
           <header>
             <h1>Seriam os gatos astronautas?</h1>
@@ -59,8 +60,52 @@ export function Home() {
             </p>
           </div>
         </section>
+        <section className="wrap articles">
+          <h1>Artigos relacionados</h1>
+          <Article
+            image="https://source.unsplash.com/random/?sleepy+cat"
+            title={"Sábado preguiçoso"}
+            description={
+              "Descubra atividades interessantes para fazer com seu pet durante os finais de semana."
+            }
+          />
+
+          <Article
+            image="https://source.unsplash.com/random/?cats"
+            title={"Balaio de gatos"}
+            description={
+              "Como evitar confusões entre seus gatíneos e acostumá-los desde filhotes."
+            }
+          />
+
+          <Article
+            image="https://source.unsplash.com/random/?kitty"
+            title={"Cartela de cores"}
+            description={
+              "Seu gato é inverno intenso? Verão profundo? Descubra as cores que mais combinam com seu bichano."
+            }
+          />
+
+          <Article
+            image="https://source.unsplash.com/random/?cat+snow"
+            title={"Os gatos sentem frio?"}
+            description={
+              "Preparem-se para a frente fria que vem para o país da melhor maneira possível."
+            }
+          />
+
+          <Article
+            image="https://source.unsplash.com/random/?cat"
+            title={"Conheça o Moacir"}
+            description={
+              "Moacir é o gatinho da semana do nosso blog. Venha conhecer sua história de superação."
+            }
+          />
+        </section>
       </Main>
-      <Footer className="wrap"></Footer>
+      <Footer className="wrap">
+        <p>&copy; 2023 - fladev</p>
+      </Footer>
     </Container>
   );
 }

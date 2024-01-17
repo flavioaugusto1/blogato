@@ -51,7 +51,7 @@ export const Main = styled.main`
 
   img {
     width: 100%;
-    aspect-ratio: 16/9;
+    aspect-ratio: 4/3;
     object-fit: cover;
   }
 
@@ -94,5 +94,32 @@ export const Main = styled.main`
       margin-top: 3rem;
     }
   }
+
+  .articles {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+
+    h1 {
+      margin: 0;
+    }
+
+    img {
+      width: 15.1rem;
+      height: 10.4rem;
+      aspect-ratio: 16/9;
+      object-fit: cover;
+
+      border-radius: 0.5rem;
+    }
+  }
 `;
-export const Footer = styled.footer``;
+export const Footer = styled.footer`
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+
+  padding: 1.6rem;
+
+  color: ${({ theme }) => theme.COLORS.WHITE};
+`;

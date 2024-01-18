@@ -11,8 +11,11 @@ export default createGlobalStyle`
     font-size: 62.5%;
   }
 
+  html, body, input {
+    font-family: 'Mulish', sans-serif;
+  }
+
   body {
     background-color: ${({ theme }) => theme.COLORS.BLUE_700};
-    font-family: 'Mulish', sans-serif;
   }
 `;

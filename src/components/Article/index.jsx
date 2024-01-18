@@ -1,8 +1,8 @@
 import { Container } from "./styles";
 
-export function Article({ image, title, description }) {
+export function Article({ image, title, description, ...rest }) {
   return (
-    <Container>
+    <Container {...rest}>
       <img src={image} alt="" />
       <div className="details">
         <h2>{title}</h2>

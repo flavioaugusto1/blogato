@@ -22,21 +22,21 @@ export function Home() {
         />
       </Header>
       <Main>
-        <img src="https://source.unsplash.com/random/?astronaut+cat" alt="" />
-        <section className="wrap">
-          <header>
-            <h1>Seriam os gatos astronautas?</h1>
-            <div className="assessment">
-              <button>
-                <AiOutlineLike className="button-icons" />
-              </button>
-              <button>
-                <AiOutlineDislike className="button-icons" />
-              </button>
-            </div>
-          </header>
-          <div className="description">
-            <p>
+        <div className="content">
+          <section className="description">
+            <img src="https://source.unsplash.com/800x600/?astronaut+cat" />
+            <header className="wrap">
+              <h1>Seriam os gatos astronautas?</h1>
+              <div className="assessment">
+                <button>
+                  <AiOutlineLike className="button-icons" />
+                </button>
+                <button>
+                  <AiOutlineDislike className="button-icons" />
+                </button>
+              </div>
+            </header>
+            <p className="wrap">
               Os gatos são animais fascinantes e cercados de mistérios. De
               temperamento independente e misterioso, esses felinos são
               conhecidos por sua agilidade, elegância e um comportamento muitas
@@ -58,50 +58,55 @@ export function Home() {
               boreal. Esses e outros indícios foram interpretados como sinais de
               que os gatos seriam seres interplanetários.
             </p>
-          </div>
-        </section>
-        <section className="wrap articles">
-          <h1>Artigos relacionados</h1>
-          <Article
-            image="https://source.unsplash.com/random/?sleepy+cat"
-            title={"Sábado preguiçoso"}
-            description={
-              "Descubra atividades interessantes para fazer com seu pet durante os finais de semana."
-            }
-          />
+          </section>
+          <section className="articles wrap">
+            <h1>Artigos relacionados</h1>
+            <Article
+              image="https://source.unsplash.com/650x450/?sleepy+cat"
+              title={"Sábado preguiçoso"}
+              description={
+                "Descubra atividades interessantes para fazer com seu pet durante os finais de semana."
+              }
+              style={{ animationDelay: 1 + "s" }}
+            />
 
-          <Article
-            image="https://source.unsplash.com/random/?many+cat"
-            title={"Balaio de gatos"}
-            description={
-              "Como evitar confusões entre seus gatíneos e acostumá-los desde filhotes."
-            }
-          />
+            <Article
+              image="https://source.unsplash.com/random/?many+cat"
+              title={"Balaio de gatos"}
+              description={
+                "Como evitar confusões entre seus gatíneos e acostumá-los desde filhotes."
+              }
+              style={{ animationDelay: 1.2 + "s" }}
+            />
 
-          <Article
-            image="https://source.unsplash.com/random/?kitty"
-            title={"Cartela de cores"}
-            description={
-              "Seu gato é inverno intenso? Verão profundo? Descubra as cores que mais combinam com seu bichano."
-            }
-          />
+            <Article
+              image="https://source.unsplash.com/random/?kitty"
+              title={"Cartela de cores"}
+              description={
+                "Seu gato é inverno intenso? Verão profundo? Descubra as cores que mais combinam com seu bichano."
+              }
+              style={{ animationDelay: 1.4 + "s" }}
+            />
 
-          <Article
-            image="https://source.unsplash.com/random/?cat+snow"
-            title={"Os gatos sentem frio?"}
-            description={
-              "Preparem-se para a frente fria que vem para o país da melhor maneira possível."
-            }
-          />
+            <Article
+              image="https://source.unsplash.com/random/?cat+snow"
+              title={"Os gatos sentem frio?"}
+              description={
+                "Preparem-se para a frente fria que vem para o país da melhor maneira possível."
+              }
+              style={{ animationDelay: 1.8 + "s" }}
+            />
 
-          <Article
-            image="https://source.unsplash.com/random/?cat"
-            title={"Conheça o Moacir"}
-            description={
-              "Moacir é o gatinho da semana do nosso blog. Venha conhecer sua história de superação."
-            }
-          />
-        </section>
+            <Article
+              image="https://source.unsplash.com/random/?cat"
+              title={"Conheça o Moacir"}
+              description={
+                "Moacir é o gatinho da semana do nosso blog. Venha conhecer sua história de superação."
+              }
+              style={{ animationDelay: 2 + "s" }}
+            />
+          </section>
+        </div>
       </Main>
       <Footer className="wrap">
         <p>&copy; 2023 - fladev</p>
